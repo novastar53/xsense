@@ -1,4 +1,6 @@
-# from bot.fetcher import fetch_tweets
+import json
+
+from bot.fetcher import fetch_tweets
 # from bot.aggregator import aggregate_data
 # # from bot.follower_logic import follow_accounts
 # from bot.reporter import generate_report
@@ -12,7 +14,12 @@ def run_bot():
     logging.info("Starting the bot...")
     
     # Step 1: Fetch tweets
-    # tweets = fetch_tweets()
+    tweets = fetch_tweets()
+    pretty_json = json.dumps(tweets, indent=4, sort_keys=True)
+
+    logging.info(pretty_json)
+
+
     
     # Step 2: Aggregate data
     # aggregated_data = aggregate_data(tweets)

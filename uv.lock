@@ -492,6 +492,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pytest-bdd" },
     { name = "python-dotenv" },
+    { name = "requests-oauthlib" },
     { name = "schedule" },
     { name = "tweepy" },
 ]
